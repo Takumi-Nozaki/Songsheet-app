@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-devise_for :users
   devise_scope :users do
     get '/users', to: redirect("/users/sign_up")
   end
 
-get '/' => 'home#top'
+  devise_for :users, controllers: {
+    registrations: 'users/registrations',
+    sessions: 'users/sessions'
+  }
 
-root to: 'home#top'
+  get '/' => 'home#top'
 
 end

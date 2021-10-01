@@ -11,18 +11,17 @@
   </head>
 
   <body>
-    <% if flash[:notice] %>
-      <div class="notification is-info">
-        <p class="notice"><%= notice %></p>
-      </div>
-    <% end %>
-
-    <% if flash[:alert] %>
-      <div class="notification is-danger">
-        <p class="alert"><%= alert %></p>
-      </div>
-    <% end %>
-
-    <%= yield %>
+  <header>
+    <nav>  
+      <% if user_signed_in? %>
+        <%= "こんにちは#{current_user.email}さん" %>
+        <%= link_to 'logout', destroy_user_session_path, method: :delete %>
+      <% else %>
+          <%= link_to 'sign up', new_user_registration_path %>
+          <%= link_to 'login', new_user_session_path %>
+      <% end %>
+    </nav>
+  </header>
+  <%= yield %>
   </body>
 </html>
