@@ -1,9 +1,12 @@
 class PhotosController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_photo, only: %i[ show edit update destroy ]
-
+  
   # GET /photos or /photos.json
   def index
     @photos = Photo.all
+    @q = Photo.ransack(params[:q])
+    @photos = @q.result(distinct: true)
   end
 
   # GET /photos/1 or /photos/1.json

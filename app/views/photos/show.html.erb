@@ -10,7 +10,7 @@
   <%= @photo.photo_path_string %>
 </p>
 <p>
-  <%= image_tag @photo.photo_path_string %>
+  <%= image_tag @photo.photo_path_string.url %>
 </p>
 
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
