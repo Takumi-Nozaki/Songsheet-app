@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+  get 'mies/show'
+
   resources :photos
+
+  resource :my, only: %i(show)
+
   devise_scope :users do
-    get '/users', to: redirect("/users/sign_up")
+    get 'login', to: 'devise/sessions#new'
   end
 
   devise_for :users, controllers: {
@@ -9,6 +14,6 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
 
-  get '/' => 'home#top'
-
+  root to: 'home#top'
+  
 end
