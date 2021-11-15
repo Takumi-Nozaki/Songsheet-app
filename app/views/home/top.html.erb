@@ -11,7 +11,7 @@
       <nav class="nav justify-content-end">
         <a class="nav-link"><%= link_to 'ホーム', root_path %>
         <a class="nav-link"><%= link_to '新規登録', new_user_registration_path %>
-        <a class="nav-link"><%= link_to 'ログイン', new_user_session_path %>
+        <a class="nav-link"><%= link_to '楽譜一覧', photos_path %>
       </nav>
       <!-- Background image -->
       <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1573152958734-1922c188fba3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1032&q=80'); height: 100vh;">
@@ -30,16 +30,14 @@
             <h3 class="text-secondary mb-0">アプリケーションのサービス</h3>
           </div>
           <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
               <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
-                <h4><strong>Search the musical score</strong></h4>
-                <i class="bi bi-file-earmark-music"></i>
+                <h4><strong>Search the musical score</strong><i class="bi bi-file-earmark-music"></i></h4>
                   <p class="text-faded mb-0">キリスト教会で歌われている賛美の楽譜を検索することができます。</p>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
               <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
-                <h4><strong>Share the musical score</strong></h4>
-                <i class="bi bi-file-image"></i>
+                <h4><strong>Share the musical score</strong><i class="bi bi-file-earmark-music"></i></h4>
                   <p class="text-faded mb-0">それぞれが楽譜をアップすることで、お互いに楽譜をシェアすることができます。</p>
             </div>
           </div>  
