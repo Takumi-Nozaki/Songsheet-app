@@ -11,53 +11,34 @@
       <nav class="nav justify-content-end">
         <a class="nav-link"><%= link_to 'ホーム', root_path %>
         <a class="nav-link"><%= link_to '新規登録', new_user_registration_path %>
-        <a class="nav-link"><%= link_to '楽譜一覧', photos_path %>
+        <a class="nav-link"><%= link_to '楽譜', photos_path %>
       </nav>
       <!-- Background image -->
       <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1573152958734-1922c188fba3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1032&q=80'); height: 100vh;">
+        <div class="container px-4 px-lg-5 text-center">
+          <h1 class="text-light">楽譜投稿＆検索アプリケーション</h1>
+        </div>
       </div>
       <!-- Background image -->
-      <header class="masthead d-flex align-items-center">
-        <div class="container px-4 px-lg-5 text-center">
-          <h1 class="mb-1">楽譜検索アプリケーション</h1>
-            <h3 class="mb-5"><em>ログインして確認したい楽譜を検索しよう！</em></h3>
-        </div>
-      </header>
       <!-- Services-->
-      <section class="content-section bg-primary text-white text-center" id="services">
-        <div class="container px-4 px-lg-5">
-          <div class="content-section-heading">
-            <h3 class="text-secondary mb-0">アプリケーションのサービス</h3>
+      <section class="content-section bg-transparent text-black-50 text-center" id="services">
+        <div class="row gx-4 gx-lg-5">
+          <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+              <h4><strong>楽譜を投稿しよう</strong><i class="bi bi-file-earmark-music"></i></h4>
+                <p class="text-black-50 mb-0">キリスト教会で歌われている賛美の楽譜を検索することができます。</p>
           </div>
-          <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
-              <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
-                <h4><strong>Search the musical score</strong><i class="bi bi-file-earmark-music"></i></h4>
-                  <p class="text-faded mb-0">キリスト教会で歌われている賛美の楽譜を検索することができます。</p>
-            </div>
-            <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
-              <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
-                <h4><strong>Share the musical score</strong><i class="bi bi-file-earmark-music"></i></h4>
-                  <p class="text-faded mb-0">それぞれが楽譜をアップすることで、お互いに楽譜をシェアすることができます。</p>
-            </div>
-          </div>  
-        </div>
+          <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+              <h4><strong>楽譜を検索しよう</strong><i class="bi bi-file-earmark-music"></i></h4>
+                <p class="text-black-50 mb-0">それぞれが楽譜をアップすることで、お互いに楽譜をシェアすることができます。</p>
+          </div>
+        </div>  
       </section>
       <!-- Footer-->
       <footer class="footer text-center">
         <div class="container px-4 px-lg-5">
-          <ul class="list-inline mb-5">
-            <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-            </li>
-          </ul>
-          <p class="text-muted small mb-0">Copyright &copy; Takumi Nozaki 2021</p>
+          <p class="text-black-50 small mb-5">Copyright &copy; Takumi Nozaki 2021</p>
         </div>
       </footer>
       <!-- Scroll to Top Button-->
